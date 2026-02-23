@@ -100,7 +100,7 @@ export default function Portfolio() {
         <Header onSocialProofClick={() => setShowSocialModal(true)} />
 
         {/* Add padding to account for fixed header */}
-        <div className="pt-14 md:pt-16">
+        <div className="pt-24 md:pt-28">
           <main className="max-w-5xl mx-auto px-4 md:px-8 py-12 overflow-hidden">
             <AnimatePresence initial={false} custom={direction} mode="wait">
               {currentSection === "experience" ? (
