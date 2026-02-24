@@ -83,7 +83,7 @@ export default function Portfolio() {
           name="twitter:description"
           content="Senior full-stack engineer with 7+ years of experience building and scaling cloud-native SaaS, fintech, and AI-powered products."
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/svg+xml" href="/favicon-mw.svg" />
       </Head>
 
       <MouseTrail enabled={true} />

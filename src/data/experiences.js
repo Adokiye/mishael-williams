@@ -14,7 +14,7 @@ export const experiences = [
     title: "Multi-Tenant Marketplace and Payments Engineering",
     description:
       "Architected and scaled APIs, order orchestration, vendor tooling, and settlement pipelines for FoodCourt's marketplace and payments platform.",
-    tags: ["NestJS", "Ruby on Rails", "PostgreSQL", "Redis", "AWS"],
+    tags: ["NestJS", "Flutter", "PostgreSQL", "Redis", "AWS"],
     year: "2022-2024",
     company: "FoodCourt (YC S22)",
     role: "Lead Full Stack Engineer",
@@ -114,7 +114,7 @@ export const allExperiences = [
     title: "FoodCourt (YC S22) - Lead Full Stack Engineer",
     description:
       "Architected and scaled a multi-tenant marketplace and payments platform with reliable APIs, async processing, and production cloud infrastructure.",
-    tags: ["NestJS", "Ruby on Rails", "Express", "AWS", "PostgreSQL", "Redis"],
+    tags: ["NestJS", "Flutter", "Express", "AWS", "PostgreSQL", "Redis"],
     year: "May 2022-December 2024",
     link: "https://www.getfoodcourt.com/",
   },

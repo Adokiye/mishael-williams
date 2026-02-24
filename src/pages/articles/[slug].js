@@ -45,7 +45,7 @@ export default function ArticleDetail({ article }) {
       <Head>
         <title>{article.title} - Mishael Williams</title>
         <meta name="description" content={article.description} />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/svg+xml" href="/favicon-mw.svg" />
       </Head>
 
       <MouseTrail enabled={true} />
