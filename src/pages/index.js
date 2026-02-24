@@ -96,7 +96,7 @@ export default function Portfolio() {
         onToggle={handleToggleSection}
       />
 
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen bg-white dark:bg-[#0b0f17] text-black dark:text-[#f3f4f6] transition-colors duration-200">
         <Header onSocialProofClick={() => setShowSocialModal(true)} />
 
         {/* Add padding to account for fixed header */}
@@ -116,7 +116,9 @@ export default function Portfolio() {
                     opacity: { duration: 0.2 },
                   }}
                 >
-                  <h2 className="text-3xl font-bold mb-8">experience</h2>
+                  <h2 className="text-3xl font-bold mb-8 text-black dark:text-[#f3f4f6]">
+                    experience
+                  </h2>
                   <div className="space-y-6">
                     {allExperiences.map((experience, index) => (
                       <ExperienceCard
@@ -140,7 +142,9 @@ export default function Portfolio() {
                     opacity: { duration: 0.2 },
                   }}
                 >
-                  <h2 className="text-3xl font-bold mb-8">thought corner</h2>
+                  <h2 className="text-3xl font-bold mb-8 text-black dark:text-[#f3f4f6]">
+                    thought corner
+                  </h2>
                   <div className="space-y-6">
                     {articles.map((article, index) => (
                       <ArticleCard

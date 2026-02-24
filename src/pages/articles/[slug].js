@@ -54,34 +54,38 @@ export default function ArticleDetail({ article }) {
         onClose={() => setShowSocialModal(false)}
       />
 
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen bg-white dark:bg-[#0b0f17] text-black dark:text-[#f3f4f6] transition-colors duration-200">
         <Header onSocialProofClick={() => setShowSocialModal(true)} />
 
         {/* Add padding to account for fixed header */}
-        <div className="pt-20 md:pt-20">
+        <div className="pt-24 md:pt-28">
           <main className="max-w-4xl mx-auto px-8 py-12">
             <Link
               href="/"
-              className="text-grey-text hover:text-black mb-8 inline-block"
+              className="text-grey-text dark:text-[#b8c2d1] hover:text-black dark:hover:text-[#f3f4f6] mb-8 inline-block"
             >
               ← Back to thought corner
             </Link>
 
             <article className="mt-8">
               <header className="mb-8">
-                <h1 className="text-4xl font-bold mb-4">{article.title}</h1>
-                <p className="text-grey-text mb-4">{article.description}</p>
+                <h1 className="text-4xl font-bold mb-4 text-black dark:text-[#f3f4f6]">
+                  {article.title}
+                </h1>
+                <p className="text-grey-text dark:text-[#b8c2d1] mb-4">
+                  {article.description}
+                </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {article.tags.map((tag, idx) => (
                     <span
                       key={idx}
-                      className="px-3 py-1 bg-grey-whitesmoke border border-grey-border rounded-full text-sm"
+                      className="px-3 py-1 bg-grey-whitesmoke dark:bg-[#1b2231] border border-grey-border dark:border-[#2a2f3a] rounded-full text-sm text-black dark:text-[#d4d8df]"
                     >
                       {tag}
                     </span>
                   ))}
                 </div>
-                <time className="text-grey-text2 text-sm">
+                <time className="text-grey-text2 dark:text-[#8a94a4] text-sm">
                   {new Date(article.publishedDate).toLocaleDateString("en-US", {
                     year: "numeric",
                     month: "long",
@@ -106,6 +110,7 @@ export default function ArticleDetail({ article }) {
       <style jsx global>{`
         .article-content {
           line-height: 1.8;
+          color: inherit;
         }
         .article-content h1 {
           font-size: 2rem;
@@ -188,6 +193,29 @@ export default function ArticleDetail({ article }) {
         }
         .article-content em {
           font-style: italic;
+        }
+
+        html.dark .article-content code {
+          background-color: #1b2231;
+          color: #f0abfc;
+        }
+
+        html.dark .article-content pre {
+          background-color: #101522;
+          border-color: #2a2f3a;
+        }
+
+        html.dark .article-content blockquote {
+          border-left-color: #4b5565;
+          color: #9aa3b2;
+        }
+
+        html.dark .article-content hr {
+          border-top-color: #2a2f3a;
+        }
+
+        html.dark .article-content a {
+          color: #8ab4f8;
         }
       `}</style>
     </>

@@ -1,9 +1,7 @@
 import "styles/globals.css";
-import { useEffect } from "react";
-import Script from "next/script";
-import { useRouter } from "next/router";
 import { Space_Mono } from "@next/font/google";
 import localFont from "@next/font/local";
+import { ThemeProvider } from "context/ThemeContext";
 
 const spaceMono = Space_Mono({
   subsets: ["latin"],
@@ -54,14 +52,14 @@ const futora = localFont({
 
 export default function App({ Component, pageProps }) {
   return (
-    <>
+    <ThemeProvider>
       <div id="app-modal-root"></div>
       <main
-        className={`${spaceMono.variable} font-mono`}
-        style={{ fontFamily: 'var(--font-space-mono), monospace' }}
+        className={`${spaceMono.variable} font-mono transition-colors duration-200`}
+        style={{ fontFamily: "var(--font-space-mono), monospace" }}
       >
         <Component {...pageProps} />
       </main>
-    </>
+    </ThemeProvider>
   );
 }

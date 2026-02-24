@@ -62,13 +62,15 @@ const SocialProofModal = ({ isOpen, onClose }) => {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}
               transition={{ type: "spring", damping: 25, stiffness: 300 }}
-              className="bg-white rounded-2xl shadow-2xl p-8 max-w-md w-full"
+              className="bg-white dark:bg-[#121722] rounded-2xl shadow-2xl p-8 max-w-md w-full border border-grey-border dark:border-[#2a2f3a]"
             >
               <div className="flex justify-between items-center mb-6">
-                <h3 className="text-2xl font-bold">Connect with me</h3>
+                <h3 className="text-2xl font-bold text-black dark:text-[#f3f4f6]">
+                  Connect with me
+                </h3>
                 <button
                   onClick={onClose}
-                  className="text-grey-text hover:text-black transition-colors text-2xl leading-none"
+                  className="text-grey-text dark:text-[#b8c2d1] hover:text-black dark:hover:text-[#f3f4f6] transition-colors text-2xl leading-none"
                   aria-label="Close modal"
                 >
                   ×
@@ -84,14 +86,17 @@ const SocialProofModal = ({ isOpen, onClose }) => {
                       href={social.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-4 p-4 border border-grey-border rounded-lg hover:border-grey-text hover:bg-grey-whitesmoke3 transition-all duration-200 group"
+                      className="flex items-center gap-4 p-4 border border-grey-border dark:border-[#2a2f3a] rounded-lg hover:border-grey-text dark:hover:border-[#4b5565] hover:bg-grey-whitesmoke3 dark:hover:bg-[#1b2231] transition-all duration-200 group"
                     >
-                      <Icon size={28} className="text-black flex-shrink-0" />
+                      <Icon
+                        size={28}
+                        className="text-black dark:text-[#f3f4f6] flex-shrink-0"
+                      />
                       <div className="flex-1 min-w-0">
-                        <div className="font-semibold text-black group-hover:text-blue-500 transition-colors">
+                        <div className="font-semibold text-black dark:text-[#f3f4f6] group-hover:text-blue-500 transition-colors">
                           {social.name}
                         </div>
-                        <div className="text-sm text-grey-text truncate">
+                        <div className="text-sm text-grey-text dark:text-[#b8c2d1] truncate">
                           {social.label}
                         </div>
                       </div>

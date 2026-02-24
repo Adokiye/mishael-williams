@@ -51,12 +51,17 @@ const CommentForm = ({ articleTitle }) => {
   };
 
   return (
-    <div className="mt-12 border-t border-grey-border pt-12">
-      <h3 className="text-2xl font-bold mb-6">Leave a comment</h3>
+    <div className="mt-12 border-t border-grey-border dark:border-[#2a2f3a] pt-12">
+      <h3 className="text-2xl font-bold mb-6 text-black dark:text-[#f3f4f6]">
+        Leave a comment
+      </h3>
 
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
-          <label htmlFor="name" className="block text-sm font-medium mb-2">
+          <label
+            htmlFor="name"
+            className="block text-sm font-medium mb-2 text-black dark:text-[#d4d8df]"
+          >
             Name
           </label>
           <input
@@ -66,13 +71,16 @@ const CommentForm = ({ articleTitle }) => {
             value={formData.name}
             onChange={handleChange}
             required
-            className="w-full px-4 py-2 border border-grey-border rounded-lg focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
+            className="w-full px-4 py-2 border border-grey-border dark:border-[#2a2f3a] rounded-lg bg-white dark:bg-[#121722] text-black dark:text-[#f3f4f6] focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-[#9ca3af] focus:border-transparent"
             placeholder="Your name"
           />
         </div>
 
         <div>
-          <label htmlFor="email" className="block text-sm font-medium mb-2">
+          <label
+            htmlFor="email"
+            className="block text-sm font-medium mb-2 text-black dark:text-[#d4d8df]"
+          >
             Email
           </label>
           <input
@@ -82,13 +90,16 @@ const CommentForm = ({ articleTitle }) => {
             value={formData.email}
             onChange={handleChange}
             required
-            className="w-full px-4 py-2 border border-grey-border rounded-lg focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
+            className="w-full px-4 py-2 border border-grey-border dark:border-[#2a2f3a] rounded-lg bg-white dark:bg-[#121722] text-black dark:text-[#f3f4f6] focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-[#9ca3af] focus:border-transparent"
             placeholder="your.email@example.com"
           />
         </div>
 
         <div>
-          <label htmlFor="comment" className="block text-sm font-medium mb-2">
+          <label
+            htmlFor="comment"
+            className="block text-sm font-medium mb-2 text-black dark:text-[#d4d8df]"
+          >
             Comment
           </label>
           <textarea
@@ -98,7 +109,7 @@ const CommentForm = ({ articleTitle }) => {
             onChange={handleChange}
             required
             rows="4"
-            className="w-full px-4 py-2 border border-grey-border rounded-lg focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent resize-none"
+            className="w-full px-4 py-2 border border-grey-border dark:border-[#2a2f3a] rounded-lg bg-white dark:bg-[#121722] text-black dark:text-[#f3f4f6] focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-[#9ca3af] focus:border-transparent resize-none"
             placeholder="Share your thoughts..."
           />
         </div>

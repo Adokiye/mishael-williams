@@ -107,6 +107,7 @@ export const allExperiences = [
       "Stabilized a fragmented engineering stack, rebuilt critical components, and delivered web, mobile, and backend products with stronger architecture standards.",
     tags: ["Next.js", "Flutter", "NestJS", "PostgreSQL", "Queues", "AWS"],
     year: "January 2025-Present",
+    link: "https://suncoredigital.com/",
   },
   {
     id: 2,

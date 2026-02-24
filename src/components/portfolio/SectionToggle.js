@@ -12,7 +12,7 @@ const SectionToggle = ({ currentSection, onToggle }) => {
       transition={{ delay: 0.5, type: 'spring', damping: 15 }}
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
-      className="fixed bottom-8 right-8 bg-black text-white px-6 py-3 rounded-full shadow-2xl hover:shadow-3xl transition-shadow duration-300 z-30 flex items-center gap-2 font-medium"
+      className="fixed bottom-8 right-8 bg-black dark:bg-[#e5e7eb] text-white dark:text-[#111827] px-6 py-3 rounded-full shadow-2xl hover:shadow-3xl transition-shadow duration-300 z-30 flex items-center gap-2 font-medium"
     >
       <span>{isThoughtCorner ? 'experience' : 'thought corner'}</span>
       <motion.svg
